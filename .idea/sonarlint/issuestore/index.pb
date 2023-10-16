@@ -1,10 +1,6 @@
 
-i
-9src/main/java/com/company/loanapi/LoanApiApplication.java,6\3\63931a60274fbf031448bb14a901e88a13d3e941
 v
 Fsrc/main/java/com/company/loanapi/error/model/BadRequestException.java,b\1\b1f975ac916d6bd4636edaea8cf4466a067b481a
-n
->src/test/java/com/company/loanapi/LoanApiApplicationTests.java,b\9\b996acb3c89d0e5b767da2cfb477dc25a4bbe6f3
 f
 6src/main/java/com/company/loanapi/dto/CustomerDto.java,7\1\71af3c5520db3d8a1ccfc749765adb69a15f8c41
 i
