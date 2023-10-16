@@ -1,0 +1,7 @@
+spring:
+    datasource:
+        loan:
+            driverClassName: com.mysql.cj.jdbc.Driver
+            jdbc-url: jdbc:mysql://localhost:3306/loan
+            username: root
+            password: 12345
