@@ -1,1 +1,4 @@
 rootProject.name = 'loan-api'
+
+include ':jdbc'
+include ':jpa'
