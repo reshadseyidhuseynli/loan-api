@@ -5,19 +5,30 @@ plugins {
 }
 
 group = 'com.company'
+version = '0.0.1-SNAPSHOT'
 
 java {
 	sourceCompatibility = '1.8'
 }
 
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
+repositories {
+	mavenCentral()
 }
 
-allprojects {
-	repositories {
-		mavenCentral()
-	}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation "org.mapstruct:mapstruct:1.5.5.Final"
+	annotationProcessor "org.mapstruct:mapstruct-processor:1.5.5.Final"
+
+	implementation 'org.springdoc:springdoc-openapi-ui:1.7.0'
+	implementation 'mysql:mysql-connector-java:8.0.33'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
 }

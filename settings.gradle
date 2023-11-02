@@ -1,4 +1,1 @@
-rootProject.name = 'loan-api'
-
-include ':jdbc'
-include ':jpa'
+rootProject.name = 'loan-api-jdbc'
